@@ -1,0 +1,11 @@
+﻿<section>
+    <h2 class="page-title" data-bind="text: title"></h2>
+    <h3 class="page-title" data-bind="text: compTitle"></h3>
+    <button data-bind="click: clickUpdateTitle.bind($data, 'My new updated title')">Update the title</button>
+    <h2 data-bind="text: 'List of our '+countries().length+' countries:'"></h2>
+    <ul data-bind="foreach: countries" style="padding-left: 50px;">
+        <li class="toolTip" data-placement="left" data-toggle="tooltip" data-container="body" data-bind="attr: { 'data-original-title': toolTip }">
+            <span data-bind="text: id"/><span> - </span><span data-bind="text: name"/>
+        </li>
+    </ul>
+</section>
