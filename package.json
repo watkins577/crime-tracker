@@ -9,12 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.0",
+    "@types/googlemaps": "^3.30.10",
     "gulp-concat": "^2.6.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.9.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.10.0"
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.1"
   }
 }

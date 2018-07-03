@@ -1,3 +1,8 @@
 ﻿<section>
     <h2 class="page-title" data-bind="text: title"></h2>
+    <input data-bind="textInput: postcode"/>
+    <button data-bind="click: clickUpdateCrimes.bind($data)">Search for Crimes</button>
+    <ul data-bind="foreach: crimes">
+        <li><span data-bind="text: category"></span></li>
+    </ul>
 </section>
