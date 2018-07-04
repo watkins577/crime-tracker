@@ -1,6 +1,7 @@
 ﻿<section>
     <h2 class="page-title" data-bind="text: title"></h2>
-    <input data-bind="textInput: postcode"/>
+    <input data-bind="value: postcode"/><br/>
+    <input data-bind="value: apiUrl"/>
     <button data-bind="click: clickUpdateCrimes.bind($data)">Search for Crimes</button>
     <ul data-bind="foreach: crimes">
         <li><span data-bind="text: category"></span></li>
